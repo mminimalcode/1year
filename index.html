@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Film</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-light"></div>
+    <p class="intro-small">A STORY ABOUT US</p>
+    <h1>OUR<br />FILM</h1>
+    <div class="intro-line"></div>
+  </div>
+
+  <header class="header">
+    <a href="#top" class="brand">OUR FILM<span>— 01</span></a>
+    <button class="menu-button" id="menuButton" type="button" aria-expanded="false">MENU <i></i></button>
+    <nav class="menu" id="menu">
+      <a href="#story">История</a>
+      <a href="#details">О тебе</a>
+      <a href="#playlist">Плейлист</a>
+      <a href="#behind">За кадром</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="cover">
+      <div class="cover-image"></div><div class="cover-grain"></div>
+      <div class="cover-copy enter">
+        <p class="kicker">ОРИГИНАЛЬНАЯ ИСТОРИЯ · 2025 — FOREVER</p>
+        <h2>Наша — <br /><em>история.</em></h2>
+        <p class="description">История начавшаяся случайно, но так удачно</p>
+        <a href="#story" class="watch-link"><span class="play">▶</span> НАЧАТЬ ПРОСМОТР <b>↓</b></a>
+      </div>
+      <aside class="cover-side enter"><span>01 / 05</span><span>ROMANCE</span><span>∞ MINUTES</span></aside>
+      <p class="vertical-title">MADE FOR YOU</p>
+    </section>
+
+    <section class="story" id="story">
+      <div class="section-number reveal">01</div>
+      <div class="story-title reveal"><p class="kicker">АННОТАЦИЯ</p><h2>День с тобой это самое<br />прекрасное<em> что может быть</em></h2></div>
+      <div class="story-text reveal">
+        <p>А в ночь тебе смотря на веки,<br />
+        С тобой хочу любовь на веки,<br />
+        А как твой лик озаряет – мой,<br />
+        Пленяя страстною красой,<br />
+        Тебя люблю обутой и босой,<br />
+        Тебя люблю, люблю, любой!</p>
+      </div>
+      <div class="quote reveal">“Каждый день с тобой особый Мне любимый, и живой! ”</div>
+    </section>
+
+    <section class="about-her" id="details">
+      <div class="about-head reveal"><p class="kicker">02 · О ТЕБЕ</p><h2>Три причины,<br />почему я тобой<br /><em>горжусь.</em></h2><p>Их, конечно, намного больше. </p></div>
+      <div class="about-list">
+        <article class="about-card reveal"><div class="about-photo"><img src="about-01.jpg" alt="Портрет девушки" /><span>01</span></div><div class="about-text"><p class="item-meta">ТВОЙ ХАРАКТЕР</p><h3>Ты умеешь<br /><em>заявить о себе.</em></h3><p>В мире где все забываются в делах,растворяются в трендах ты не теряешься и можешь отстоять свои личные границы.Своя уникальность это то что отвечает тебя от толпы. Мне же очень нравится все необычное и твоя уникальность, ты в том числе.</p></div></article>
+        <article class="about-card reverse-about reveal"><div class="about-photo"><img src="about-02.jpg" alt="Улыбка девушки" /><span>02</span></div><div class="about-text"><p class="item-meta">ТВОЯ УЛЫБКА</p><h3>Ты озабочена<br /><em>заботой.</em></h3><p>У тебя это основная черта хоть ты этого может и не замечаешь. Особая забота о своих близких, для тебя это важно не только и не столько на словах сколько на деле.</p></div></article>
+        <article class="about-card reveal"><div class="about-photo"><img src="about-03.jpg" alt="Фотография девушки" /><span>03</span></div><div class="about-text"><p class="item-meta">ТВОИ МЕЧТЫ</p><h3>Ты<br /><em>(не)реальная.</em></h3><p>От тебя веет искренностью, В тебе нет "идеальной картинки", ты строишь реальность такая какая она есть, без прикрас, и тем самым создаёшь красоты сравнимые лишь с природой</p></div></article>
+      </div>
+    </section>
+
+    <!-- РАЗДЕЛ: ПЛЕЙЛИСТ -->
+    <section class="playlist" id="playlist">
+      <div class="playlist-head reveal">
+        <p class="kicker">03 · ТВОЙ ПЛЕЙЛИСТ</p>
+        <h2>Треки, которые<br />ты <em>любишь.</em></h2>
+        <p>Музыка, которая звучит в твоём сердце — теперь и в нашей истории</p>
+      </div>
+
+      <!-- ОБЩИЙ ПЛЕЕР ВНИЗУ -->
+      <div class="player-container" id="playerContainer">
+        <div class="player-bar">
+          <div class="player-info">
+            <div class="player-cover" id="playerCover">
+              <img src="track1.jpg" alt="Обложка" />
+            </div>
+            <div class="player-meta">
+              <h4 id="playerTitle">Буря, метель и мгла</h4>
+              <p id="playerArtist">Mzlff, Канги</p>
+            </div>
+          </div>
+          <div class="player-controls">
+            <button class="player-btn" id="playBtn" title="Воспроизвести/Пауза">▶</button>
+            <button class="player-btn" id="closePlayer" title="Закрыть плеер">✕</button>
+          </div>
+          <div class="player-progress">
+            <span class="player-time" id="currentTime">0:00</span>
+            <div class="progress-bar" id="progressBar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="player-time" id="totalTime">0:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="track-list">
+        <!-- Трек 1 -->
+        <div class="track reveal track-left" data-track="0">
+          <div class="track-number">01</div>
+          <div class="track-content">
+            <div class="track-image">
+              <img src="track1.jpg" alt="Обложка трека" />
+              <div class="track-overlay">
+                <span class="play-icon">▶</span>
+              </div>
+            </div>
+            <div class="track-info">
+              <h3>Буря, метель и мгла</h3>
+              <p class="track-artist">Mzlff, Канги</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Трек 2 -->
+        <div class="track reveal track-right" data-track="1">
+          <div class="track-number">02</div>
+          <div class="track-content">
+            <div class="track-image">
+              <img src="track2.jpg" alt="Обложка трека" />
+              <div class="track-overlay">
+                <span class="play-icon">▶</span>
+              </div>
+            </div>
+            <div class="track-info">
+              <h3>Это не мой вайб</h3>
+              <p class="track-artist">СТИНТ</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Трек 3 -->
+        <div class="track reveal track-left" data-track="2">
+          <div class="track-number">03</div>
+          <div class="track-content">
+            <div class="track-image">
+              <img src="track3.jpg" alt="Обложка трека" />
+              <div class="track-overlay">
+                <span class="play-icon">▶</span>
+              </div>
+            </div>
+            <div class="track-info">
+              <h3>Киношка</h3>
+              <p class="track-artist">Мелшер &amp; 5орока</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- РАЗДЕЛ: ЗА КАДРОМ -->
+    <section class="behind" id="behind">
+      <div class="behind-head reveal">
+        <p class="kicker">04 · ЗА КАДРОМ</p>
+        <h2>Моменты, которые<br />остались в <em>кадре.</em></h2>
+        <p>Наши лучшие сцены, которые я храню в памяти</p>
+      </div>
+
+      <div class="photo-grid">
+        <div class="photo-card reveal">
+          <div class="photo-image"><img src="behind-01.jpg" alt="Наш первый кадр" /></div>
+          <div class="photo-text"><p class="photo-label">Ты — мой <span>фильм</span></p></div>
+        </div>
+        <div class="photo-card reveal">
+          <div class="photo-image"><img src="behind-02.jpg" alt="Самый счастливый момент" /></div>
+          <div class="photo-text"><p class="photo-label">Мой любимый <span>кадр</span></p></div>
+        </div>
+        <div class="photo-card reveal">
+          <div class="photo-image"><img src="behind-03.jpg" alt="Ты моя главная роль" /></div>
+          <div class="photo-text"><p class="photo-label">Ты моя <span>главная роль</span></p></div>
+        </div>
+      </div>
+
+      <div class="behind-note reveal"><p></p></div>
+    </section>
+
+    <section class="finale" id="finale">
+      <p class="kicker reveal">КОНЕЦ ПЕРВОЙ ЧАСТИ</p>
+      <h2 class="reveal">To be<br /><em>continued.</em></h2>
+      <p class="final-note reveal">С любовью. Твой самый преданный зритель.</p>
+      <button type="button" id="replay" class="replay reveal">↻ СМОТРЕТЬ СНАЧАЛА</button>
+    </section>
+  </main>
+  <footer>OUR FILM · FOR YOU · ALWAYS</footer>
+  <script src="script.js"></script>
+</body>
+</html>
